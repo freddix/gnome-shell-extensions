@@ -1,7 +1,7 @@
 Summary:	Collection of GNOME Shell extensions
 Name:		gnome-shell-extensions
 Version:	3.8.0
-Release:	1
+Release:	2
 Group:		X11/Applications
 License:	GPL v2 / BSD
 # not available as tarball yet
@@ -16,7 +16,6 @@ BuildRequires:	libgtop-devel
 BuildRequires:	libtool
 Requires(post,postun):	glib-gio-gsettings
 Requires:	gnome-shell
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -61,7 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc COPYING NEWS README
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.alternative-status-menu.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.auto-move-windows.gschema.xml
-%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.example.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.native-window-placement.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.user-theme.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.window-list.gschema.xml
@@ -72,7 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/default-min-max@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/drive-menu@gnome-shell-extensions.gcampax.github.com
-%{_datadir}/gnome-shell/extensions/example@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/launch-new-instance@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/native-window-placement@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/places-menu@gnome-shell-extensions.gcampax.github.com
