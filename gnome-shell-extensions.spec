@@ -1,12 +1,12 @@
 Summary:	Collection of GNOME Shell extensions
 Name:		gnome-shell-extensions
-Version:	3.8.2
+Version:	3.8.3
 Release:	1
 Group:		X11/Applications
 License:	GPL v2 / BSD
 # not available as tarball yet
 Source0:	http://download.gnome.org/sources/gnome-shell-extensions/3.8/%{name}-%{version}.tar.xz
-# Source0-md5:	80a1af799f4360160719c420c59694a2
+# Source0-md5:	cad1e9c4c0fa5a27c5c8cebdf265859b
 URL:		http://live.gnome.org/GnomeShell/Extensions
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -60,6 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc COPYING NEWS README
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.alternative-status-menu.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.auto-move-windows.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.classic-overrides.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.native-window-placement.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.user-theme.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.window-list.gschema.xml
@@ -68,12 +69,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gnome-shell/extensions/alternative-status-menu@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/apps-menu@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com
-%{_datadir}/gnome-shell/extensions/default-min-max@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/drive-menu@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/launch-new-instance@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/native-window-placement@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/places-menu@gnome-shell-extensions.gcampax.github.com
-%{_datadir}/gnome-shell/extensions/static-workspaces@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/systemMonitor@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/user-theme@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/window-list@gnome-shell-extensions.gcampax.github.com
@@ -83,6 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_datadir}/gnome-session/sessions/gnome-classic.session
 %{_datadir}/gnome-shell/modes/classic.json
+%{_datadir}/gnome-shell/theme/classic-process-working.svg
 %{_datadir}/gnome-shell/theme/classic-toggle-off-intl.svg
 %{_datadir}/gnome-shell/theme/classic-toggle-off-us.svg
 %{_datadir}/gnome-shell/theme/classic-toggle-on-intl.svg
