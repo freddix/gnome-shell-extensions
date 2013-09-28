@@ -1,21 +1,21 @@
 Summary:	Collection of GNOME Shell extensions
 Name:		gnome-shell-extensions
-Version:	3.8.4
+Version:	3.10.0
 Release:	1
 Group:		X11/Applications
 License:	GPL v2 / BSD
 # not available as tarball yet
-Source0:	http://download.gnome.org/sources/gnome-shell-extensions/3.8/%{name}-%{version}.tar.xz
-# Source0-md5:	b891f58cb10a489b069a4e5aef9be21f
+Source0:	http://download.gnome.org/sources/gnome-shell-extensions/3.10/%{name}-%{version}.tar.xz
+# Source0-md5:	b1cc2c876952d766035bb1e5c969f75b
 URL:		http://live.gnome.org/GnomeShell/Extensions
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gnome-desktop-devel
+BuildRequires:	gnome-desktop-devel >= 3.10.0
 BuildRequires:	intltool
 BuildRequires:	libgtop-devel
 BuildRequires:	libtool
 Requires(post,postun):	glib-gio-gsettings
-Requires:	gnome-shell
+Requires:	gnome-shell >= 3.10.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -58,7 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc COPYING NEWS README
-%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.alternative-status-menu.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.auto-move-windows.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.classic-overrides.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.native-window-placement.gschema.xml
@@ -66,7 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.window-list.gschema.xml
 
 %{_datadir}/gnome-shell/extensions/alternate-tab@gnome-shell-extensions.gcampax.github.com
-%{_datadir}/gnome-shell/extensions/alternative-status-menu@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/apps-menu@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/drive-menu@gnome-shell-extensions.gcampax.github.com
@@ -78,7 +76,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gnome-shell/extensions/window-list@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/windowsNavigator@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/workspace-indicator@gnome-shell-extensions.gcampax.github.com
-%{_datadir}/gnome-shell/extensions/xrandr-indicator@gnome-shell-extensions.gcampax.github.com
 
 %{_datadir}/gnome-session/sessions/gnome-classic.session
 %{_datadir}/gnome-shell/modes/classic.json
