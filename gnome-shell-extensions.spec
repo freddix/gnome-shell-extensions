@@ -1,21 +1,21 @@
 Summary:	Collection of GNOME Shell extensions
 Name:		gnome-shell-extensions
-Version:	3.10.1
+Version:	3.12.0
 Release:	1
 Group:		X11/Applications
 License:	GPL v2 / BSD
 # not available as tarball yet
-Source0:	http://download.gnome.org/sources/gnome-shell-extensions/3.10/%{name}-%{version}.tar.xz
-# Source0-md5:	cbf1c0eab389557ef2ab1f0454e4cef4
+Source0:	http://download.gnome.org/sources/gnome-shell-extensions/3.12/%{name}-%{version}.tar.xz
+# Source0-md5:	e8eb9b66352c0810c633b1689d7c04d8
 URL:		http://live.gnome.org/GnomeShell/Extensions
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gnome-desktop-devel >= 3.10.0
+BuildRequires:	gnome-desktop-devel >= 3.12.0
 BuildRequires:	intltool
 BuildRequires:	libgtop-devel
 BuildRequires:	libtool
 Requires(post,postun):	glib-gio-gsettings
-Requires:	gnome-shell >= 3.10.0
+Requires:	gnome-shell >= 3.12.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
