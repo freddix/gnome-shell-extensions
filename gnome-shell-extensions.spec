@@ -1,21 +1,21 @@
 Summary:	Collection of GNOME Shell extensions
 Name:		gnome-shell-extensions
-Version:	3.12.0
+Version:	3.14.0
 Release:	1
 Group:		X11/Applications
 License:	GPL v2 / BSD
 # not available as tarball yet
-Source0:	http://download.gnome.org/sources/gnome-shell-extensions/3.12/%{name}-%{version}.tar.xz
-# Source0-md5:	e8eb9b66352c0810c633b1689d7c04d8
+Source0:	http://download.gnome.org/sources/gnome-shell-extensions/3.14/%{name}-%{version}.tar.xz
+# Source0-md5:	9ba3cb7f22185365108c69074577a975
 URL:		http://live.gnome.org/GnomeShell/Extensions
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gnome-desktop-devel >= 3.12.0
+BuildRequires:	gnome-desktop-devel >= 3.14.0
 BuildRequires:	intltool
 BuildRequires:	libgtop-devel
 BuildRequires:	libtool
 Requires(post,postun):	glib-gio-gsettings
-Requires:	gnome-shell >= 3.12.0
+Requires:	gnome-shell >= 3.14.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -61,6 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.auto-move-windows.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.classic-overrides.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.native-window-placement.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.screenshot-window-sizer.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.user-theme.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.window-list.gschema.xml
 
@@ -71,6 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gnome-shell/extensions/launch-new-instance@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/native-window-placement@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/places-menu@gnome-shell-extensions.gcampax.github.com
+%{_datadir}/gnome-shell/extensions/screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/systemMonitor@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/user-theme@gnome-shell-extensions.gcampax.github.com
 %{_datadir}/gnome-shell/extensions/window-list@gnome-shell-extensions.gcampax.github.com
@@ -87,3 +89,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gnome-shell/theme/gnome-classic.css
 %{_datadir}/xsessions/gnome-classic.desktop
 %{_desktopdir}/gnome-shell-classic.desktop
+
