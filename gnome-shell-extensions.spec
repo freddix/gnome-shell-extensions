@@ -1,12 +1,12 @@
 Summary:	Collection of GNOME Shell extensions
 Name:		gnome-shell-extensions
-Version:	3.14.0
+Version:	3.14.1
 Release:	1
 Group:		X11/Applications
 License:	GPL v2 / BSD
 # not available as tarball yet
 Source0:	http://download.gnome.org/sources/gnome-shell-extensions/3.14/%{name}-%{version}.tar.xz
-# Source0-md5:	9ba3cb7f22185365108c69074577a975
+# Source0-md5:	450ba17f6213728f20b4223cda113f2f
 URL:		http://live.gnome.org/GnomeShell/Extensions
 BuildRequires:	autoconf
 BuildRequires:	automake
